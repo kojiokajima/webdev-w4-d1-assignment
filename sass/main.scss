@@ -129,7 +129,8 @@ body {
     }
 }
 
-@mixin btn-style {
+.btn,
+.btn:visited {
     text-transform: uppercase;
     text-decoration: none;
     padding: 15px 40px;
@@ -137,14 +138,6 @@ body {
     border-radius: 100px;
     transition: all .2s;
     position: relative;
-}
-
-.btn {
-    @include btn-style();
-
-    &:visited {
-        @include btn-style();
-    }
 
     &:hover {
         transform: translateY(-3px);
